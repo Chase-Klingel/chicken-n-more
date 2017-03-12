@@ -1,0 +1,102 @@
+@import 'vendor/normalize';
+
+$primary-color: #B30000;
+$secondary-color: #F3B243;
+
+body {
+  font-family: 'Roboto';
+}
+
+.mobile-nav {
+  background: $primary-color;
+  color: white;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.mobile-nav__menu {
+  left: 25px;
+  padding: 0;
+  position: absolute;
+}
+
+.mobile-nav__menu__span {
+  background: white;
+  display: block;
+  height: 2px;
+  margin-bottom: 7px;
+  width: 35px;
+}
+
+.mobile-nav__logo {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mobile-nav__phone {
+  color: white;
+  font-size: 14px;
+  right: 15px;
+  top: 20px;
+  text-decoration: none;
+  position: absolute;
+}
+
+.hero {
+  background: linear-gradient(
+    rgba(0, 0, 0, .3),
+    rgba(0, 0, 0, .3)
+    ),
+    url('../img/hero.jpg'),  no-repeat center center;
+  background-size: cover;
+  height: 75vh;
+  margin-top: 60px;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+
+.hero__text {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.1px;
+  line-height: 40px;
+  padding-top: 26vh;
+  text-transform: uppercase;
+}
+
+.hero__menu-btn {
+  background: $secondary-color;
+  border: none;
+  color: white;
+  font-size: 14px;
+  height: 40px;
+  text-transform: uppercase;
+  width: 175px;
+}
+
+.hours {
+  background: #E8E8E8;
+  padding-left: 10%;
+  padding-bottom: 25px;
+}
+
+.hours__heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 25px;
+}
+
+.hours__list {
+  list-style: none;
+  padding: 0;
+}
+
+.hours__list__daily-hours {
+  color: #2E2E2E;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
