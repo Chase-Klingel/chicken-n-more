@@ -32,18 +32,20 @@ body {
 
 .mobile-nav__logo {
   font-size: 16px;
-  margin-top: 20px;
+  margin-top: 13px;
+  margin-bottom: 9px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .mobile-nav__phone {
-  color: white;
   font-size: 14px;
-  right: 15px;
-  top: 20px;
+  text-align: center;
   text-decoration: none;
-  position: absolute;
+}
+
+.mobile-nav__phone__number {
+  color: lightgrey;
 }
 
 .hero {
@@ -71,11 +73,20 @@ body {
 .hero__menu-btn {
   background: $secondary-color;
   border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   color: white;
   font-size: 14px;
   height: 40px;
   text-transform: uppercase;
   width: 175px;
+}
+
+.hero__phone {
+  color: white;
+  display: block;
+  font-size: 14px;
+  margin-top: 20px;
+  text-decoration: none;
 }
 
 .hours {
