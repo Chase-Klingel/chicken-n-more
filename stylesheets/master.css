@@ -406,7 +406,8 @@ body {
   font-family: 'Roboto'; }
 
 .mobile-nav {
-  background: #B30000;
+  background: #dd130e;
+  background-size: cover;
   color: white;
   height: 60px;
   position: fixed;
@@ -427,45 +428,88 @@ body {
 
 .mobile-nav__logo {
   font-size: 16px;
-  margin-top: 13px;
+  margin-top: 20px;
   margin-bottom: 9px;
   text-align: center;
   text-transform: uppercase; }
 
-.mobile-nav__phone {
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none; }
-
-.mobile-nav__phone__number {
-  color: lightgrey; }
-
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/hero.jpg"), no-repeat center center;
-  background-size: cover;
   height: 75vh;
+  width: 100%;
   margin-top: 60px;
-  padding-left: 10%;
-  padding-right: 5%; }
+  overflow: hidden;
+  position: relative; }
 
 .hero__text {
   color: white;
   font-size: 20px;
   letter-spacing: 1.1px;
   line-height: 40px;
-  padding-top: 26vh;
+  margin-top: 26vh;
+  padding-left: 10%;
+  padding-right: 5%;
   text-transform: uppercase; }
 
-.hero__menu-btn {
-  background: #F3B243;
-  border: none;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  color: white;
-  font-size: 14px;
-  height: 40px;
-  text-transform: uppercase;
-  width: 175px; }
+.hero__btn {
+  margin-left: 10%;
+  margin-top: 50px; }
 
+.hero__btn__menu,
+.hero__btn__phone {
+  display: inline-block;
+  background: black;
+  border: none;
+  color: white;
+  font-size: 11px;
+  height: 50px;
+  letter-spacing: 1.5px;
+  line-height: 50px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 65%;
+  z-index: 2; }
+
+.hero__btn__menu {
+  background: #F3B243;
+  color: black; }
+
+.hero__btn__menu__span {
+  position: absolute;
+  background: white;
+  height: 100%;
+  width: 200px;
+  right: 0;
+  transition: .8s ease-in-out;
+  z-index: -1; }
+
+.hero__btn__menu__arrow {
+  display: inline-block;
+  position: absolute;
+  right: 35px;
+  font-size: 16px;
+  color: #494949; }
+
+.hero__img {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/hero.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-animation: zoomin 5s 1; }
+@-webkit-keyframes zoomin {
+  0% {
+    -webkit-transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.02); } }
 .hero__phone {
   color: white;
   display: block;
